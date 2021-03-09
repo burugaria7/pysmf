@@ -12,9 +12,8 @@ class HelloView(View):
 
     def post(self, request, *args, **kwargs):
         context = {
-            'name': request.POST['name'],
-            'email': request.POST['email'],
-            'message': request.POST['message'],
+            'url': request.POST['url'],
+            'message': "URL is " + request.POST['url'],
         }
         return render(request, 'hello.html', context)
 

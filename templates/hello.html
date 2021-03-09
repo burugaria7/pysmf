@@ -3,12 +3,8 @@
   <form action="/makesmf/" method="post">
     {% csrf_token %}
     <div>
-      <label for="name">名前</label>
-      <input type="text" id="name" name="name" value="{{ name }}">
-    </div>
-    <div>
-      <label for="email">メールアドレス</label>
-      <input type="mail" id="email" name="email" value="{{ email }}">
+      <label for="url">URL</label>
+      <input type="text" id="url" name="url" value="{{ url }}">
     </div>
     <div>
       <label for="message">内容</label>
